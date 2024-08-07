@@ -1,0 +1,145 @@
+:root {
+    --bs-body-bg: #FFFCF2;
+    /* --bs-primary: #fffcf2; */
+    --bs-primary-rgb: 255, 252, 242;
+    --bs-dark-rgb: 1, 22, 45;
+    --bs-secondary-rgb: rgb(52, 98, 63);
+    --bs-btn-hover-color: #C93A00;
+    --bs-btn-hover-bg: #FFFCF2;
+    --bs-btn-hover-border-color: #FFFCF2;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #C93A00;
+    --bs-btn-active-border-color: #C93A00;
+   
+}
+
+.btn-primary {
+    --bs-btn-bg:#C93A00;
+    --bs-btn-border-color: #C93A00;
+    
+}
+
+.bg-dark {
+    background-color: rgba(var(--bs-dark-rgb));
+}
+
+.bg-secondary {
+    background-color: var(--bs-secondary-rgb) !important;
+}
+
+
+
+
+#banner {
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(../images/banner.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+}
+
+.about {
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(../images/about-us.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+}
+
+
+.d-flex {
+    height: 65vh;
+}
+
+h1, h2, h3 {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+}
+
+p {
+    font-family: Helvetica, sans-serif;
+}
+
+form {
+    background-color: #01172F;
+}
+
+.contact {
+    margin: 50px 0 100px 0;
+}
+
+.team img {
+    max-width: 100%;
+}
+
+.services img {
+width: 80%;
+}
+
+
+
+/* BUTTON HOVER STYLE */
+
+@keyframes hover {
+from {
+background-color:#C93A00; 
+}
+to {
+background-color: #FFFCF2;
+}
+}
+
+
+.btn-primary:hover {
+    animation-name: hover;
+    animation-duration: 1s;
+    --bs-btn-hover-color: #C93A00;
+    --bs-btn-hover-bg: #FFFCF2;
+    --bs-btn-hover-border-color: #FFFCF2;
+}
+
+.btn-primary:focus {
+    background-color: var(--bs-btn-active-color) !important;
+    color: #C93A00;
+    border: 1px solid #FFFCF2;
+}
+
+/* .btn-primary:active {
+    --bs-btn-active-color: #FFFCF2;
+    --bs-btn-active-bg: #C93A00;
+    --bs-btn-active-border-color: #FFFCF2;
+} */
+
+.journeyteam {
+    object-fit:cover;
+}
+
+/* NAV BAR STYLE */
+
+.nav-link:hover {
+    color: #C93A00 !important;
+}
+
+.nav-link:focus {
+    color: #FFFCF2 !important;
+}
+
+
+/* MEDIA QUERIES FOR PC */
+
+
+
+@media screen and (min-width: 992px) {
+    .contact p {
+        padding-right: 130px;
+        
+    }
+    .contact h1, .contact p {
+        text-align: left;
+    }
+}
+
+
+
